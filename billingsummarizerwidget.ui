@@ -1,0 +1,460 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>BillingSummarizerWidget</class>
+ <widget class="QWidget" name="BillingSummarizerWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>754</width>
+    <height>672</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_6" stretch="0,1">
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <property name="topMargin">
+      <number>0</number>
+     </property>
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout_9">
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout">
+         <item>
+          <widget class="QLabel" name="groupByCaptionLabel">
+           <property name="text">
+            <string>Group by</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="groupByComboBox">
+           <item>
+            <property name="text">
+             <string>Task</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Description</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_2">
+         <item>
+          <widget class="QLabel" name="groupByTimespanCaptionLabel">
+           <property name="text">
+            <string>Group by Timespan</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="groupByTimespanComboBox">
+           <item>
+            <property name="text">
+             <string>Do not group</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Day</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Month</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_3">
+         <item>
+          <widget class="QLabel" name="splitByCaptionLabel">
+           <property name="text">
+            <string>Split by</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="splitByComboBox">
+           <item>
+            <property name="text">
+             <string>Do not split</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Task</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>User</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Custom ...</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout_8">
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QCheckBox" name="useWorkspaceRoundingCheckBox">
+         <property name="text">
+          <string>Use workspace rounding</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QWidget" name="roundingConfig" native="true">
+         <layout class="QVBoxLayout" name="verticalLayout_12">
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <layout class="QVBoxLayout" name="verticalLayout_11">
+            <property name="bottomMargin">
+             <number>0</number>
+            </property>
+            <item>
+             <widget class="QLabel" name="roundingCaptionLabel">
+              <property name="text">
+               <string>Rounding</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QComboBox" name="roundingComboBox">
+              <item>
+               <property name="text">
+                <string>No Rounding</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Up</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Nearest</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Down</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QVBoxLayout" name="verticalLayout_10">
+            <property name="bottomMargin">
+             <number>0</number>
+            </property>
+            <item>
+             <widget class="QLabel" name="roundingMinutesCaptionLabel">
+              <property name="text">
+               <string>Rounding Minutes</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QComboBox" name="roundingMinutesComboBox">
+              <item>
+               <property name="text">
+                <string>No Rounding</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>1 Minute</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>5 Minutes</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>6 Minutes</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>10 Minutes</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>12 Minutes</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>15 Minutes</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>30 Minutes</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>1 Hour</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>4 Hours</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <spacer name="verticalSpacer_3">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QTabWidget" name="tabWidget">
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <widget class="QWidget" name="splitRuleTab">
+      <attribute name="title">
+       <string>Custom Split Configuration</string>
+      </attribute>
+      <layout class="QVBoxLayout" name="verticalLayout_7">
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QStackedWidget" name="stackedWidget">
+         <property name="currentIndex">
+          <number>0</number>
+         </property>
+         <widget class="QWidget" name="nonCustomSplit">
+          <layout class="QVBoxLayout" name="verticalLayout_4">
+           <property name="leftMargin">
+            <number>0</number>
+           </property>
+           <property name="topMargin">
+            <number>0</number>
+           </property>
+           <property name="rightMargin">
+            <number>0</number>
+           </property>
+           <property name="bottomMargin">
+            <number>0</number>
+           </property>
+           <item>
+            <spacer name="verticalSpacer">
+             <property name="orientation">
+              <enum>Qt::Vertical</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>20</width>
+               <height>129</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="customSplitPage">
+          <layout class="QVBoxLayout" name="verticalLayout_5" stretch="0,0,0">
+           <property name="leftMargin">
+            <number>0</number>
+           </property>
+           <property name="topMargin">
+            <number>0</number>
+           </property>
+           <property name="rightMargin">
+            <number>0</number>
+           </property>
+           <property name="bottomMargin">
+            <number>0</number>
+           </property>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_2">
+             <property name="topMargin">
+              <number>0</number>
+             </property>
+             <item>
+              <spacer name="horizontalSpacer">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>40</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item>
+              <widget class="QPushButton" name="addSplitByRuleButton">
+               <property name="text">
+                <string>Add rule</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <widget class="QWidget" name="customRuleWidget" native="true"/>
+           </item>
+           <item>
+            <spacer name="verticalSpacer_2">
+             <property name="orientation">
+              <enum>Qt::Vertical</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>20</width>
+               <height>40</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+          </layout>
+         </widget>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="groupRenamingTab">
+      <attribute name="title">
+       <string>Split Group Renaming</string>
+      </attribute>
+      <layout class="QVBoxLayout" name="verticalLayout_13">
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QTableWidget" name="renamingTableWidget">
+         <property name="editTriggers">
+          <set>QAbstractItemView::DoubleClicked|QAbstractItemView::EditKeyPressed</set>
+         </property>
+         <property name="alternatingRowColors">
+          <bool>true</bool>
+         </property>
+         <property name="selectionMode">
+          <enum>QAbstractItemView::SingleSelection</enum>
+         </property>
+         <property name="selectionBehavior">
+          <enum>QAbstractItemView::SelectRows</enum>
+         </property>
+         <property name="columnCount">
+          <number>2</number>
+         </property>
+         <attribute name="horizontalHeaderDefaultSectionSize">
+          <number>240</number>
+         </attribute>
+         <attribute name="horizontalHeaderStretchLastSection">
+          <bool>true</bool>
+         </attribute>
+         <attribute name="verticalHeaderVisible">
+          <bool>false</bool>
+         </attribute>
+         <column>
+          <property name="text">
+           <string>Group</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>New Name</string>
+          </property>
+         </column>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

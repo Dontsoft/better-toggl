@@ -1,0 +1,47 @@
+<RCC>
+    <qresource prefix="/logo">
+        <file>icons/sizes/icon-16.png</file>
+        <file>icons/sizes/icon-18.png</file>
+        <file>icons/sizes/icon-20.png</file>
+        <file>icons/sizes/icon-22.png</file>
+        <file>icons/sizes/icon-24.png</file>
+        <file>icons/sizes/icon-30.png</file>
+        <file>icons/sizes/icon-32.png</file>
+        <file>icons/sizes/icon-33.png</file>
+        <file>icons/sizes/icon-36.png</file>
+        <file>icons/sizes/icon-40.png</file>
+        <file>icons/sizes/icon-44.png</file>
+        <file>icons/sizes/icon-48.png</file>
+        <file>icons/sizes/icon-55.png</file>
+        <file>icons/sizes/icon-60.png</file>
+        <file>icons/sizes/icon-64.png</file>
+        <file>icons/sizes/icon-66.png</file>
+        <file>icons/sizes/icon-71.png</file>
+        <file>icons/sizes/icon-72.png</file>
+        <file>icons/sizes/icon-80.png</file>
+        <file>icons/sizes/icon-88.png</file>
+        <file>icons/sizes/icon-89.png</file>
+        <file>icons/sizes/icon-96.png</file>
+        <file>icons/sizes/icon-107.png</file>
+        <file>icons/sizes/icon-128.png</file>
+        <file>icons/sizes/icon-142.png</file>
+        <file>icons/sizes/icon-150.png</file>
+        <file>icons/sizes/icon-176.png</file>
+        <file>icons/sizes/icon-188.png</file>
+        <file>icons/sizes/icon-225.png</file>
+        <file>icons/sizes/icon-256.png</file>
+        <file>icons/sizes/icon-284.png</file>
+        <file>icons/sizes/icon-300.png</file>
+        <file>icons/sizes/icon-310.png</file>
+        <file>icons/sizes/icon-388.png</file>
+        <file>icons/sizes/icon-420.png</file>
+        <file>icons/sizes/icon-465.png</file>
+        <file>icons/sizes/icon-512.png</file>
+        <file>icons/sizes/icon-540.png</file>
+        <file>icons/sizes/icon-600.png</file>
+        <file>icons/sizes/icon-620.png</file>
+        <file>icons/sizes/icon-1024.png</file>
+        <file>icons/sizes/icon-1240.png</file>
+        <file>icons/source-BetterToggl.svg</file>
+    </qresource>
+</RCC>

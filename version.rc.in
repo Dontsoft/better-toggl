@@ -1,0 +1,46 @@
+#define VER_COMMENT "@APP_COMMENT@"
+
+#define VER_COMPANY_NAME "@APP_AUTHOR@"
+
+#define VER_FILE_DESCRIPTION "@APP_DESCRIPTION@"
+
+#define VER_FILE_VERSION @WINDOWS_VERSION@
+#define VER_FILE_VERSION_STR "@APP_VERSION@"
+
+#define VER_PRODUCT_VERSION @WINDOWS_VERSION@
+#define VER_PRODUCT_VERSION_STR "@APP_VERSION@"
+
+#define VER_INTERNAL_NAME "@INTERNAL_NAME@"
+
+#define VER_COPYRIGHT_STR "Copyright © @APP_YEAR@ @APP_AUTHOR@. All rights reserved."
+
+#define VER_ORIGINAL_FILENAME "@PROJECT_NAME@"
+
+#define VER_PRODUCT_NAME "@APP_NAME@"
+
+VS_VERSION_INFO VERSIONINFO
+FILEVERSION VER_FILE_VERSION
+PRODUCTVERSION VER_PRODUCT_VERSION
+FILEFLAGSMASK 0x3fL
+
+BEGIN
+        BLOCK "StringFileInfo"
+        BEGIN
+                BLOCK "040904B0"   /* LANG_ENGLISH/SUBLANG_ENGLISH_US, Unicode CP */
+                BEGIN
+                    VALUE "Comment",          VER_COMMENT
+                    VALUE "CompanyName",      VER_COMPANY_NAME
+                    VALUE "InternalName",     VER_INTERNAL_NAME
+                    VALUE "LegalCopyright",   VER_COPYRIGHT_STR
+                    VALUE "OriginalFilename", VER_ORIGINAL_FILENAME
+                    VALUE "ProductName",      VER_PRODUCT_NAME
+                    VALUE "ProductVersion",   VER_PRODUCT_VERSION_STR
+                END
+
+        END
+
+        BLOCK "VarFileInfo"
+        BEGIN
+                VALUE "Translation", 0x0409, 0x04B0
+        END
+END
