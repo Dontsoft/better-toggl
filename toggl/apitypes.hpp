@@ -17,6 +17,7 @@ namespace toggl {
 
         template<typename T>
         std::optional<T> get(const QString &fieldName) const;
+#if defined(__clang__)
         template<>
         std::optional<bool> get<bool>(const QString &fieldName) const;
         template<>
@@ -35,6 +36,17 @@ namespace toggl {
         std::optional<QList<double>> get<QList<double>>(const QString &fieldName) const;
         template<>
         std::optional<QList<QString>> get<QList<QString>>(const QString &fieldName) const;
+#else
+        std::optional<bool> get<bool>(const QString &fieldName) const;
+        std::optional<QString> get<QString>(const QString &fieldName) const;
+        std::optional<int> get<int>(const QString &fieldName) const;
+        std::optional<qint64> get<qint64>(const QString &fieldName) const;
+        std::optional<double> get<double>(const QString &fieldName) const;
+        std::optional<QDateTime> get<QDateTime>(const QString &fieldName) const;
+        std::optional<QList<int>> get<QList<int>>(const QString &fieldName) const;
+        std::optional<QList<double>> get<QList<double>>(const QString &fieldName) const;
+        std::optional<QList<QString>> get<QList<QString>>(const QString &fieldName) const;
+#endif
 
         void set(const QString &fieldName);
         QJsonObject getData() const { return data; }
