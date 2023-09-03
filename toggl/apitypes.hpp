@@ -36,16 +36,6 @@ namespace toggl {
         std::optional<QList<double>> get<QList<double>>(const QString &fieldName) const;
         template<>
         std::optional<QList<QString>> get<QList<QString>>(const QString &fieldName) const;
-#else
-        std::optional<bool> get<bool>(const QString &fieldName) const;
-        std::optional<QString> get<QString>(const QString &fieldName) const;
-        std::optional<int> get<int>(const QString &fieldName) const;
-        std::optional<qint64> get<qint64>(const QString &fieldName) const;
-        std::optional<double> get<double>(const QString &fieldName) const;
-        std::optional<QDateTime> get<QDateTime>(const QString &fieldName) const;
-        std::optional<QList<int>> get<QList<int>>(const QString &fieldName) const;
-        std::optional<QList<double>> get<QList<double>>(const QString &fieldName) const;
-        std::optional<QList<QString>> get<QList<QString>>(const QString &fieldName) const;
 #endif
 
         void set(const QString &fieldName);
@@ -168,6 +158,27 @@ namespace toggl {
         static const QString NAME;
         static const QString ACTIVE;
     };
+
+#if !defined(__clang__)
+    template<>
+    std::optional<bool> ApiDataType::get<bool>(const QString &fieldName) const;
+    template<>
+    std::optional<QString> ApiDataType::get<QString>(const QString &fieldName) const;
+    template<>
+    std::optional<int> ApiDataType::get<int>(const QString &fieldName) const;
+    template<>
+    std::optional<qint64> ApiDataType::get<qint64>(const QString &fieldName) const;
+    template<>
+    std::optional<double> ApiDataType::get<double>(const QString &fieldName) const;
+    template<>
+    std::optional<QDateTime> ApiDataType::get<QDateTime>(const QString &fieldName) const;
+    template<>
+    std::optional<QList<int>> ApiDataType::get<QList<int>>(const QString &fieldName) const;
+    template<>
+    std::optional<QList<double>> ApiDataType::get<QList<double>>(const QString &fieldName) const;
+    template<>
+    std::optional<QList<QString>> ApiDataType::get<QList<QString>>(const QString &fieldName) const;
+#endif
 
 } // namespace toggl
 
